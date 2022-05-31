@@ -14,21 +14,21 @@ const scoreDiv = document.getElementById("scoreContainer");
 let questions = [
     {
         question : "Who Is The Man?",
-        imgSrc : "img/si.jpg",
+        imgSrc : "si.jpg",
         choiceA : "Souleyman",
         choiceB : "Yotam",
         choiceC : "Motti",
         correct : "A"
     },{
         question : "Who Is The Greatest Singer On Earth?",
-        imgSrc : "img/OA.jpg",
+        imgSrc : "OA.jpg",
         choiceA : "Elthon John",
         choiceB : "Souleyman",
         choiceC : "Omer Adam",
         correct : "B"
     },{
         question : "Where Is Souleyman From?",
-        imgSrc : "img/GB.jpg",
+        imgSrc : "GB.jpg",
         choiceA : "Mississippi",
         choiceB : "Dubai",
         choiceC : "Syria",
@@ -141,11 +141,11 @@ function scoreRender(){
     const scorePerCent = Math.round(100 * score/questions.length);
     
     // choose the image based on the scorePerCent
-    let img = (scorePerCent >= 80) ? "img/5.png" :
-              (scorePerCent >= 60) ? "img/4.png" :
-              (scorePerCent >= 40) ? "img/3.png" :
-              (scorePerCent >= 20) ? "img/2.png" :
-              "img/1.png";
+    let img = (scorePerCent >= 80) ? "5.png" :
+              (scorePerCent >= 60) ? "4.png" :
+              (scorePerCent >= 40) ? "3.png" :
+              (scorePerCent >= 20) ? "2.png" :
+              "1.png";
     
     scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";

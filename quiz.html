@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quiz page</title>
+        <link rel="stylesheet" href="/styles/suliman.css">
+        <link rel="stylesheet" href="/styles/quiz.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/img/Souleyman Icon.jpg" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    </head>
+<body>
+
+    <link rel = "icon" href ="/img/Souleyman Icon.jpg" type = "image/x-icon">
+    <div class = "mainTitle"> 
+        <h1 class="display-6"> <img style = "width: 62px;" src = "/img/Souleyman Icon.jpg">
+          The Official Omar Souleyman Fan Page - Greatest Singer On Earth
+          <span class="badge rounded-pill bg-success">Yotam</span>
+    </div>
+
+    <audio controls autoplay hidden>
+        <source src="/audio/Haverot.mp3" type="audio/mpeg">
+      </audio>
+    
+    
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="/souleyman.html"> Souleyman Around The Globe </a>
+        <a class="active" href="/quiz.html"> Quiz - Get To Know The Dude </a>
+    </div>
+
+
+    <div id="container">
+        <div id="start">Start Quiz!</div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="qImg"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+    <script src="/script/quiz.js"></script>
+</body>
+</html>
